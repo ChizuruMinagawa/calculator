@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 150px;
+  height: 250px;
+  background-color: #f9a980;
+}
+
+table tb {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+input {
+  background-color: #ffe0b6;
+}
+
+.screenDisplay {
+  width: 150px;
+  height: 40px;
+  text-align: right;
+  font-size: 20px;
+  border-style: solid;
+  background-color: white;
+}
+
+.symbolDisplay {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-style: solid; 
+  background-color: white;
+}
+
+input {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="potepan2-2.css">
+    <title>電卓</title>
+    </head>
+     
+    <body>
+      <form name="calc">
+        <table>
+          <tr class=first>
+            <th colspan="3"><textarea maxlength="10" class="screenDisplay" id="screenDisplay">0</textarea></th>
+            <th><input class="C" type="button" value="C" onclick="pushClear()"></th>
+          </tr>
+          <tr>
+            <th colspan="4"><div class="symbolDisplay" id="symbolDisplay"></div></th>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" onclick="pushValue(7)"></td>
+            <td><input type="button" value="8" onclick="pushValue(8)"></td>
+            <td><input type="button" value="9" onclick="pushValue(9)"></td>
+            <td><input type="button" value="÷" onclick="pushValue('/')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" onclick="pushValue(4)"></td>
+            <td><input type="button" value="5" onclick="pushValue(5)"></td>
+            <td><input type="button" value="6" onclick="pushValue(6)"></td>
+            <td><input type="button" value="×" onclick="pushValue('*')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" onclick="pushValue(1)"></td>
+            <td><input type="button" value="2" onclick="pushValue(2)"></td>
+            <td><input type="button" value="3" onclick="pushValue(3)"></td>
+            <td><input type="button" value="-" onclick="pushValue('-')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="zero" value="0" onclick="pushValue(0)"></td>
+            <td><input type="button" id="point" value="." onclick="pushPeriod()"></td>
+            <td><input type="button" value="=" onclick="pushEqual()"></td>
+            <td><input type="button" value="+" onclick="pushValue('+')"></td>
+          </tr>
+        </table>
+      </form>
+      <script src="potepan2-2.js"></script>
+    </body>
+
+ </html>
